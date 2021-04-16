@@ -1,0 +1,98 @@
+/*--DEFINE O CONTAINER PRINCIPAL COMO FLEX E FLEX-WRAP, PRA QUEBRAR AS DIVIS QUANDO A TELA DIMINUIR-- */
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+/*--DEFINE MARGEM E TAMANHO MINIMO PRA DIV--*/
+#container > div{
+    float: right;
+    flex: 1 1 200px;
+    margin: 10px;
+}
+/*--DEFINE MARGEM E TAMANHO PADRÃO DAS IMAGENS DO CONTAINER--*/
+#container img{
+    margin-left: 15px;
+    height:8rem;
+}
+
+.texto_contato{
+    margin-bottom: 15px;
+    text-align:center;
+    font-size: larger;
+    text-decoration: underline;
+}
+/*--ESTILIZAÇÃO DO FORMULÁRIO--*/
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color: black;
+    max-width: 500px;
+    flex-wrap: wrap;
+    margin-left: 32%;
+}
+
+.p_form {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px darkblue;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/*--ESTILIZAÇÃO DO FORMULÁRIO--*/
+/*--MEDIA QUERY PARA RESPONSIVIDADE--*/
+@media screen and (max-width:768px){
+    /*--CENTRALIZA IMAGENS DO CONTEINER--*/
+    #container img{
+        margin: 0 auto;
+    }
+    /*--FAZ O FORMULÁRIO OCUPAR 100% DO WIDTH--*/
+    form  {
+        margin-left: 0px;
+    }
+}

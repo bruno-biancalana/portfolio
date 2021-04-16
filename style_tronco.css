@@ -1,0 +1,125 @@
+/*---ZERA DEFINIÇÕES DE MARGEM/ESPAÇAMENTO E DEFINE ESTILO DE TEXTO PARA AS PÁGINAS*/
+*{
+    margin: 0;
+    padding: 0;
+    font: size 1.2rem;
+    list-style: none;
+    font-family: verdana;
+}
+/* Padroniza todas as estilizações de link no site */
+a{
+    text-decoration:underline;
+    color:black;
+}
+/*--- MENU NAVEGÁVEL (TODAS AS PÁGINAS) ---*/
+img{
+    max-width: 100%;
+    display: block;
+}
+.header a{
+    text-decoration:none;
+    color: white;
+}
+.header img{
+    height:6rem;
+    border-radius: 50%;   
+    flex-wrap: wrap;
+}
+
+.header{
+    background-color: #1C1C1C;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+}
+.menu li{
+    margin-left: 10px;
+}
+.menu li a{
+    padding: 30px;
+    display: inline-block;
+    transition: background .3s;
+}
+.menu li a:hover{
+    color: black;
+    background-color : white;
+}
+
+/*--- FIM MENU ---*/
+/* ------------------------------------------------------------------------->*/
+/* ESTILO INDEX */
+h1{
+    text-align: center;
+    margin-top:10px;
+}
+.box{
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.box > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.texto_principal{
+    font-size: larger;
+    text-align: justify;
+}
+
+.menu2{
+        list-style:none;
+        border:2px solid black;
+        float:left;  
+        flex-wrap: wrap;
+        align-items:center;
+        margin-left: 30%;
+        background-color :black;
+}
+.menu2 li{
+    color: white;
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+    }
+.menu2 li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu2 li a:hover{
+background:#333;
+color:#fff;
+box-shadow: none;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+.menu2 li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+    }
+.menu2 li:hover ul, .menu li.over ul{display:block;}
+.menu2 li ul li{
+        border:1px solid #c0c0c0;
+        display:block;
+        width:150px;
+        }
+        
+/*--- MEDIA QUERY PARA RESPONSIVIDADE ---*/
+@media screen and (max-width:768px){
+    .menu li{
+        margin: 0;
+    }
+    .menu li a{
+        padding: 20px;
+    }
+    .box video{
+        width:100%;
+    }
+}

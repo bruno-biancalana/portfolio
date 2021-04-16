@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    <link rel="stylesheet" href="style_tronco.css">
+    <link rel="stylesheet" href="style_contato.css">
+    <script type="text/javascript" src="main.js"></script>
+    <title>Bruno Biancalana</title>
+</head>
+
+<body>
+    <!--MENU NAVEGÁVEL-->
+    <header class="header">
+        <a href="index.html"><img src="img/eu.jpg""></a>
+        <nav>
+            <ul class=" menu">
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="certificados.html">Certificados</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            </ul>
+            </nav>
+    </header>
+    <!--FIM MENU NAVEGÁVEL-->
+    <h1>Contato</h1>
+    <p class="texto_contato">Entre em contato comigo através dos seguintes canais:</p>
+    <!--CONTAINER PRINCIPAL, TODAS AS IMAGENS SÃO DIVS DENTRO DESSE CONTAINER-->
+    <section id="container">
+        <!--DIV ESQUERDA (LINKEDIN)-->
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/bruno-biancalana-a828b5182/" target="_blank"><img
+                    src="img/logo_linkedin.png" alt=""></a>
+        </div>
+        <!--SEGUNDA DIV (OUTLOOK)-->
+        <div class="outlook">
+            <a href="mailto: bruno.biancalana@outlook.com" target="_blank"><img src="img/logo_outlook.jpg" alt=""></a>
+        </div>
+        <!--TERCEIRA DIV (GITHUB)-->
+        <div class="github">
+            <a href="https://github.com/bruno-biancalana" target="_blank"><img src="img/logo_github.png" alt=""></a>
+        </div>
+        <!--DIV DA DIREITA (GMAIL)-->
+        <div class="gmail">
+            <a href="mailto: brunobiancalana1@gmail.com" target="_blank"><img src="img/logo_gmail.png" alt=""></a>
+        </div>
+    </section>
+    <p class="texto_contato"> Ou se preferir, através do seguinte formulário:</p>
+    <!--INICIO DO FORMULÁRIO FAKE DE CONTATO-->
+    <form name="meu_form">
+
+        <p class="p_form">Entre em contato</p>
+
+        <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome" />
+        <label for="nome">Nome</label>
+
+        <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+        <label for="fone">Fone</label>
+
+        <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+        <label for="email">Email</label>
+
+        <textarea placeholder="Deixe sua opnião"></textarea>
+
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+    </form>
+     <!--FIM DO FORMULÁRIO FAKE DE CONTATO-->
+</body>
+
+</html>

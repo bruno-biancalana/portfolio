@@ -1,0 +1,26 @@
+/*-- DEFINE TAMANHO DE TODAS AS IMAGENS DO CONTAINER (CERTIFICADOS) --*/
+#caixa img{
+    width: 30rem;
+}
+/*--DEFINE O DISPLAY DO CONTAINERCOMO FLEX E FLEX-WRAP PARA QUE AS IMAGENS QUEBREM ASSIM QUE A TELA DIMINUIR, 
+RETIRANDOA NECESSIDADE DE MEDIA QUERY --*/
+#caixa{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/*-- DEFINE A QUEBRA E MARGEM ENTRE AS DIVS NO CASO DE A TELA DIMINUIR --*/
+#caixa > div{
+    flex: 1 1 350px;
+    margin: 10px;
+}
+#caixa p{
+    font-family: verdana;
+    text-align: center;
+}
+.texto_certificado{
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+}
