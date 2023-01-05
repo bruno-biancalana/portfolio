@@ -1,4 +1,4 @@
-# :book: MEU PORTIFÓLIO :book:
+# :book: MEU PORTFÓLIO :book:
 
 ## :eyes: ​ DESCRIÇÃO :eyes: ##
 
